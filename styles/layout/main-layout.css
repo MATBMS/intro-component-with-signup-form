@@ -4,19 +4,29 @@ body {
   flex-direction: column;
   align-items: center;
   gap: var(--spacing-800);
-  padding: 88px 24px 68px 24px;
+  padding-top: 88px;
+  padding-bottom: 68px;
   /* style */
   background-image: url('../../images/bg-intro-mobile.png');
   background-color: #FF7979;
 }
 
-
+header,
+main {
+  width: calc(327 / 375 * 100vw);
+}
 
 /* SMALL MOBILE (375px and up) */
 @media (min-width: 375px) {}
 
 /* TABLET (768px and up) */
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+
+  header,
+  main {
+    width: calc(540 / 768 * 100vw);
+  }
+}
 
 /* DESKTOP (1440px and up) */
 @media (min-width: 1440px) {}

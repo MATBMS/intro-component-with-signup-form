@@ -5,6 +5,7 @@ form {
   justify-content: center;
   gap: var(--spacing-100);
   padding: var(--spacing-300);
+  width: 100%;
   /* style */
   border-radius: 10px;
   background: var(--color-white);
@@ -37,3 +38,14 @@ form a {
   font-weight: 700;
   color: var(--color-red-400);
 }
+
+/* TABLET (768px and up) */
+@media (min-width: 768px) {
+  form {
+    gap: var(--spacing-300);
+    padding: var(--spacing-400) var(--spacing-500);
+  }
+}
+
+/* DESKTOP (1440px and up) */
+@media (min-width: 1440px) {}
