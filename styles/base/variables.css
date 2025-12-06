@@ -1,0 +1,31 @@
+/* colors */
+:root {
+  /* black & white */
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+  /* gray */
+  --color-gray-900: #3D3B48;
+  --color-gray-200: #DEDEDE;
+  /* purple */
+  --color-purple-700: #5E54A4;
+  --color-purple-400: #A6A1CF;
+  --color-purple-350: #BAB7D4;
+  /* green */
+  --color-green-400: #38CC8B;
+  --color-green-300: #77E2B3;
+  /* red */
+  --color-red-400: #FF7979;
+}
+
+/* spacing */
+:root {
+  --spacing-0: 0px;
+  --spacing-100: 8px;
+  --spacing-200: 16px;
+  --spacing-300: 24px;
+  --spacing-400: 32px;
+  --spacing-500: 40px;
+  --spacing-600: 48px;
+  --spacing-700: 56px;
+  --spacing-800: 64px;
+}

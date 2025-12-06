@@ -1,0 +1,22 @@
+.offer-banner {
+  /* layout */
+  width: 100%;
+  padding: 18px 66px;
+  /* style */
+  border-radius: 10px;
+  background: var(--color-purple-700);
+  box-shadow: 0 8px 0 0 rgba(0, 0, 0, 0.15);
+}
+
+.offer-banner p {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 175%;
+  letter-spacing: 0.25px;
+  color: var(--color-white, #FFF);
+}
+
+.offer-banner p strong {
+  font-weight: 700;
+}

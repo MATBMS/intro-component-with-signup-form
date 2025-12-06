@@ -1,0 +1,14 @@
+button {
+  /* layout */
+  display: flex;
+  height: 56px;
+  width: 100%;
+  padding: var(--spacing-200) var(--spacing-400);
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-100);
+  /* style */
+  border-radius: 5px;
+  background: var(--color-green-400);
+  box-shadow: 0 -4px 0 0 rgba(0, 0, 0, 0.09) inset;
+}
