@@ -43,9 +43,15 @@ p {
     letter-spacing: -0.5px;
     text-align: center;
     /* style */
-    color: var(--color-white, #FFF);
+    color: var(--color-white);
   }
 }
 
 /* DESKTOP (1440px and up) */
-@media (min-width: 1440px) {}
+@media (min-width: 1440px) {
+
+  header h1,
+  header p {
+    text-align: left;
+  }
+}

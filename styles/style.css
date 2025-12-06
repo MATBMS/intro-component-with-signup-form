@@ -7,7 +7,7 @@
 /* Components */
 @import url("./components/button.css");
 @import url("./components/form.css");
-@import url("./components/offer-banner.css");
+@import url("./components/banner.css");
 
 /* Layout */
 @import url("./layout/main-layout.css");

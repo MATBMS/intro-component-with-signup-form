@@ -2,6 +2,7 @@ body {
   /* layout */
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: var(--spacing-800);
   padding-top: 88px;
@@ -22,11 +23,18 @@ main {
 /* TABLET (768px and up) */
 @media (min-width: 768px) {
 
-  header,
+  header {
+    width: 525px;
+  }
+
   main {
-    width: calc(540 / 768 * 100vw);
+    width: 540px;
   }
 }
 
 /* DESKTOP (1440px and up) */
-@media (min-width: 1440px) {}
+@media (min-width: 1440px) {
+  body {
+    flex-direction: row;
+  }
+}

@@ -23,6 +23,22 @@ input {
   border-radius: 5px;
   border: 1px solid var(--color-gray-200);
   background: var(--color-white);
+  /* typography */
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 175%;
+  letter-spacing: 0.25px;
+  color: var(--color-gray-900);
+}
+
+input::placeholder {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 175%;
+  letter-spacing: 0.25px;
+  color: #6E6C76;
 }
 
 form p {
@@ -37,6 +53,13 @@ form p {
 form a {
   font-weight: 700;
   color: var(--color-red-400);
+}
+
+.submit-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-100);
 }
 
 /* TABLET (768px and up) */
