@@ -20,3 +20,7 @@ button {
   letter-spacing: 2px;
   color: var(--color-white);
 }
+
+button:active {
+  background: var(--color-green-300);
+}

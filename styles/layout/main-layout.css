@@ -36,5 +36,6 @@ main {
 @media (min-width: 1440px) {
   body {
     flex-direction: row;
+    background-image: url('../../images/bg-intro-desktop.png');
   }
 }
