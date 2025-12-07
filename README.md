@@ -9,7 +9,7 @@ This is a solution to the [Intro component with sign up form challenge on Fronte
 ## Links
 
 - [Repository URL](https://github.com/MATBMS/intro-component-with-signup-form)
-- [Live site URL](https://matbms-intro-component-with-signup-form.netlify.app/)
+- [Live site URL](https://matbms-intro-component-with-signup.netlify.app/)
 
 ## Built with
 

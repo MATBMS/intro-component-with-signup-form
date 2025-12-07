@@ -17,9 +17,6 @@ main {
   width: calc(327 / 375 * 100vw);
 }
 
-/* SMALL MOBILE (375px and up) */
-@media (min-width: 375px) {}
-
 /* TABLET (768px and up) */
 @media (min-width: 768px) {
 

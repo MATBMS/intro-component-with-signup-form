@@ -26,21 +26,25 @@
       </aside>
       <form action="#" novalidate>
         <div class="input-wrapper input-error">
+          <label for="first-name" class="sr-only">First Name</label>
           <input type="text" name="first-name" id="first-name" placeholder="First Name" autocomplete="given-name"
             required>
           <p class="error-msg">First Name cannot be empty</p>
         </div>
         <div class="input-wrapper input-error">
+          <label for="last-name" class="sr-only">Last Name</label>
           <input type="text" name="last-name" id="last-name" placeholder="Last Name" autocomplete="family-name" required
             aria-describedby="last-name-error" aria-invalid="false">
           <p class="error-msg" id="last-name-error" role="alert" aria-live="polite">Last Name cannot be empty</p>
         </div>
         <div class="input-wrapper input-error">
+          <label for="email" class="sr-only">Email Address</label>
           <input type="email" name="email" id="email" placeholder="Email Address" autocomplete="email" required
             aria-describedby="email-error" aria-invalid="false">
           <p class="error-msg" id="email-error" role="alert" aria-live="polite">Looks like this is not an email</p>
         </div>
         <div class="input-wrapper input-error">
+          <label for="password" class="sr-only">Password</label>
           <input type="password" name="password" id="password" placeholder="Password" autocomplete="new-password"
             required aria-describedby="password-error" aria-invalid="false">
           <p class="error-msg" id="password-error" role="alert" aria-live="polite">Password cannot be empty</p>
