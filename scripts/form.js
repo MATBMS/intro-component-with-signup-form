@@ -34,38 +34,46 @@ function validateForm() {
   // validate first name
   if (firstNameInput.value.trim() === '') {
     inputWrappers[0].classList.add('input-error');
+    firstNameInput.setAttribute('aria-invalid', 'true');
     errorMsgs[0].classList.remove('hide');
     isValid = false;
   } else {
     inputWrappers[0].classList.remove('input-error');
+    firstNameInput.setAttribute('aria-invalid', 'false');
     errorMsgs[0].classList.add('hide');
   }
   // validate last name
   if (lastNameInput.value.trim() === '') {
     inputWrappers[1].classList.add('input-error');
+    lastNameInput.setAttribute('aria-invalid', 'true');
     errorMsgs[1].classList.remove('hide');
     isValid = false;
   } else {
     inputWrappers[1].classList.remove('input-error');
+    lastNameInput.setAttribute('aria-invalid', 'false');
     errorMsgs[1].classList.add('hide');
   }
   // validate email
   const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
   if (!emailInput.value.match(emailPattern)) {
     inputWrappers[2].classList.add('input-error');
+    emailInput.setAttribute('aria-invalid', 'true');
     errorMsgs[2].classList.remove('hide');
     isValid = false;
   } else {
     inputWrappers[2].classList.remove('input-error');
+    emailInput.setAttribute('aria-invalid', 'false');
     errorMsgs[2].classList.add('hide');
   }
   // validate password
   if (passwordInput.value.trim() === '') {
     inputWrappers[3].classList.add('input-error');
+    passwordInput.setAttribute('aria-invalid', 'true');
     errorMsgs[3].classList.remove('hide');
     isValid = false;
   } else {
     inputWrappers[3].classList.remove('input-error');
+    passwordInput.setAttribute('aria-invalid', 'false');
     errorMsgs[3].classList.add('hide');
   }
   return isValid;

@@ -21,9 +21,9 @@
       </p>
     </header>
     <main>
-      <section class="banner hide">
+      <aside class="banner hide" role="banner" aria-label="Trial offer banner">
         <p><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
-      </section>
+      </aside>
       <form action="#" novalidate>
         <div class="input-wrapper input-error">
           <input type="text" name="first-name" id="first-name" placeholder="First Name" autocomplete="given-name"
@@ -31,18 +31,19 @@
           <p class="error-msg">First Name cannot be empty</p>
         </div>
         <div class="input-wrapper input-error">
-          <input type="text" name="last-name" id="last-name" placeholder="Last Name" autocomplete="family-name"
-            required>
-          <p class="error-msg">Last Name cannot be empty</p>
+          <input type="text" name="last-name" id="last-name" placeholder="Last Name" autocomplete="family-name" required
+            aria-describedby="last-name-error" aria-invalid="false">
+          <p class="error-msg" id="last-name-error" role="alert" aria-live="polite">Last Name cannot be empty</p>
         </div>
         <div class="input-wrapper input-error">
-          <input type="email" name="email" id="email" placeholder="Email Address" autocomplete="email" required>
-          <p class="error-msg">Looks like this is not an email</p>
+          <input type="email" name="email" id="email" placeholder="Email Address" autocomplete="email" required
+            aria-describedby="email-error" aria-invalid="false">
+          <p class="error-msg" id="email-error" role="alert" aria-live="polite">Looks like this is not an email</p>
         </div>
         <div class="input-wrapper input-error">
           <input type="password" name="password" id="password" placeholder="Password" autocomplete="new-password"
-            required>
-          <p class="error-msg">Password cannot be empty</p>
+            required aria-describedby="password-error" aria-invalid="false">
+          <p class="error-msg" id="password-error" role="alert" aria-live="polite">Password cannot be empty</p>
         </div>
         <div class="submit-section">
           <button type="submit">Claim your free trial</button>
