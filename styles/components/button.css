@@ -21,6 +21,7 @@ button {
   color: var(--color-white);
 }
 
-button:active {
+button:active,
+button:disabled {
   background: var(--color-green-300);
 }

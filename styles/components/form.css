@@ -12,9 +12,63 @@ form {
   border-radius: 10px;
   background: var(--color-white);
   box-shadow: 0 8px 0 0 rgba(0, 0, 0, 0.15);
+  /* animation */
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 1;
+  transform: scale(1);
+}
+
+form.fade-out {
+  opacity: 0;
+  transform: scale(0.95);
+  pointer-events: none;
+}
+
+form.success {
+  background: var(--color-green-400);
+  box-shadow: 0 -4px 0 0 rgba(0, 0, 0, 0.09) inset;
+}
+
+.success-message {
+  text-align: center;
+  padding: var(--spacing-400);
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.success-message.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.success-message h2 {
+  color: var(--color-white);
+  margin-bottom: var(--spacing-200);
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.success-message p {
+  color: var(--color-white);
+  font-size: 15px;
+  line-height: 175%;
 }
 
 /* input */
+
+.input-wrapper,
+.submit-section {
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.input-wrapper.fade-out,
+.submit-section.fade-out {
+  opacity: 0;
+  transform: scale(0.95);
+}
 
 input {
   /* layout */
@@ -97,6 +151,10 @@ form a {
 .input-wrapper.input-error input,
 .input-wrapper.input-error input:focus {
   border: 2px solid var(--color-red-400);
+  color: var(--color-red-400);
+}
+
+.input-wrapper.input-error input::placeholder {
   color: var(--color-red-400);
 }
 
